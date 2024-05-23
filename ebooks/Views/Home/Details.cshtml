@@ -1,0 +1,164 @@
+﻿@model ebooks.Models.Books
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+    ViewData["Cart"] = HttpContextAccessor.HttpContext.Session.GetString("_Cart");
+}
+
+
+<div class="main-div">
+    <div class="row">
+    <h1>Details</h1>
+    @if (ViewBag.msg != null)
+    {
+        <div class="alert alert-block alert-success" style=" color: darkred;" id="nameError">
+            @ViewBag.msg
+        </div>
+
+    }
+    <h4>@Html.DisplayFor(model => model.BookTitle) By @Html.DisplayFor(model => model.Author)</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-2">
+            <img src="~/images/@Html.DisplayFor(model => model.CoverImage)" width="100px" height="auto">
+        </div>
+        <div class="col-md-4">
+        
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Publisher)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.Publisher)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookYear)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.BookYear)
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookType)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.BookType)
+                    </td>
+
+                </tr>
+                 <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookPrice)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.BookPrice) /-
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookDescription)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.BookDescription)
+                    </td>
+
+                </tr>
+            </table>
+        
+    
+        @if (ViewData["Username"] == null)
+        {
+                <h6 class="div-title">First you have to signin to buy this item</h6>
+                <a asp-controller="Customers" asp-action="LoginView"><button class="btn btn-sm book-btn">SignIn</button></a>
+        }
+        else
+        {
+            if (Model.Availability > 0)
+            {
+                <form asp-controller="Home" asp-action="AddCart">
+                    <input asp-for="BookId" type="hidden" class="form-control" />
+                    <div class="form-group row">
+                        
+                        <div class="col-md-3">
+                            <input type="text" name="Units" id="Units" class="form-control" value="1" required />
+                            <span for="Units" class="text-danger"></span>
+
+                        </div>
+                            <div class="col-md-9">
+                                <label for="Units" class="control-label">Book / Books add to cart</label>
+                            </div>
+
+
+                    </div>
+                    <div class="form-group">
+                            <input type="submit" value="Add to Cart" class="btn btn-sm book-btn" />
+                    </div>
+                </form>
+            }
+            else
+            {
+                <p class="text-danger">Out of Stock</p>
+            }
+    }
+     </div>
+     </div>
+    <div class="col-md-12 pt-3 mt-3">
+        <h5>Feedbacks</h5>
+        @if (ViewData["Username"] == null)
+        {
+           
+        }
+        else
+        {
+            <h6>Add new feedback</h6>
+            <form asp-controller="Home" asp-action="SaveFeedback">
+                <input asp-for="BookId" type="hidden" class="form-control" />
+                <div class="form-group row col-md-6 main-div">
+                    <div class="col-md-2">
+                        <label for="Units" class="control-label">Feedback</label>
+                    </div>
+                    <div class="col-md-8">
+                        <textarea type="text" name="FeedBack" id="FeedBack" class="form-control" required rows="5"></textarea>
+                        <span for="FeedBack" class="text-danger"></span>
+
+                    </div>
+                    <div class="col-md-2 align-content-end">
+                        <input type="submit" value="Submit" class="btn btn-sm book-btn" />
+                        </div>
+
+                </div>
+               
+            </form>
+
+
+        }
+   
+    
+    <table class="table table-borderless table-sm">
+        @if (ViewBag.Feedback != null)
+        {
+            foreach (var i in ViewBag.Feedback)
+            {
+                <tr>
+                        <td width="20%">
+                            <i class="fa fa-comments pe-3 div-title" aria-hidden="true"></i>
+                            <small class="small font-italic"> @i.Fullname</small>
+                        </td>
+                        <td><small class="small font-italic"> @i.Feedbacks </small></td>
+
+                </tr>
+            }
+        }
+    </table>
+    </div>
+    </div>
+</div>
+</div>

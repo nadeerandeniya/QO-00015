@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ebooks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ebooks.styles.css" asp-append-version="true" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-0097b2 border-bottom">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/a.png" width="100px" height="auto"></img>
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            @if (ViewData["UserRole"] != "Admin")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" href="#new">Collections</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" href="#about">Who we are</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" href="#contact">Contacts Us</a>
+                                </li>
+                                
+                                   
+                                
+
+
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Admin" asp-action="Dashboard">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Books" asp-action="Index">Collections</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Sales" asp-action="Index">Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Customers" asp-action="Index">Customers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Users" asp-action="Index">Staff</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link navbar-0097b2" asp-area="" asp-controller="Report" asp-action="Index">Report</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="Logout" class="nav-link navbar-0097b2"> <i class="fa fa-sign-out icon" aria-hidden="true"></i>Sign out</a>
+
+                                </li>
+                            }
+
+                            
+                        </ul>
+                    </div>
+                    @if (ViewData["UserRole"] != "Admin")
+                    {
+                        <div class="text-end float-end align-content-end">
+                            <form asp-controller="Home" asp-action="SearchResults">
+                                <div class="input-group">
+                                    <input type="search" class="form-control search form-control-lg" width="80%" placeholder="Search" aria-label="Search" aria-describedby="search-addon" name="search" />
+                                    <input type="submit" class="btn btn-success btn-search" data-mdb-ripple-init value="search">
+                                </div>
+                            </form>
+                        </div>
+                    }
+                </div>
+            </nav>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 text-light">
+                                        <a>
+                                        <i class="fa fa-facebook-official fa-lg ps-2" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a>
+                                        <i class="fa fa-linkedin-square fa-lg ps-2" aria-hidden="true"></i>
+
+                                    </a>
+                                    <a>
+                                        <i class="fa fa-pinterest-square fa-lg ps-2" aria-hidden="true"></i>
+
+                                    </a>
+                                    <a>
+                                        <i class="fa fa-youtube-play fa-lg ps-2" aria-hidden="true"></i>
+
+                                    </a>
+
+                       
+                    </ul>
+                </div>
+                    <div class="text-end float-end align-content-end">
+                        <ul class="navbar-nav flex-grow-1 text-light">
+                @if (ViewData["UserRole"] != "Admin")
+                    {
+                        @if (ViewData["Username"] != null)
+                        {
+
+                                    <li class="nav-item p-0097b2 pe-3"><a class="nav-link p-0097b2">@ViewData["Username"]</a></li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Customers" asp-action="Logout" class="nav-link text-light"> Sign Out</a>
+
+                                    </li>
+                                   
+                                     @if (ViewData["Cart"] != null)
+                        {
+                             <li class="nav-item">
+                            <a asp-area="" asp-controller="Home" asp-action="ViewCart" class="text-light"> <i class="fa fa-cart-plus icon text-warning" aria-hidden="true"></i>@ViewData["Cart"]</a>
+                            </li>
+                        }
+                                
+                        }
+                        else
+                        {
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Customers" asp-action="Create" class="nav-link text-light"> Sign Up</a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Customers" asp-action="Loginview" class="nav-link text-light"> Sign In</a>
+
+                                    </li>
+                                
+                        }
+                       
+                    }
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+            
+    </header>
+    
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ebooks - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

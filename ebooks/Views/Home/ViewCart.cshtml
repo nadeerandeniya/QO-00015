@@ -1,0 +1,129 @@
+﻿﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+    ViewData["Title"] = "Details";
+    ViewData["UserRole"] = "Customer";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+    ViewData["Cart"] = HttpContextAccessor.HttpContext.Session.GetString("_Cart");
+}
+<div class="main-div">
+<h1>My Cart</h1>
+
+    <hr />
+    @if (ViewBag.msg != null)
+    {
+        <div class="alert alert-block alert-success" style=" color: darkred;" id="nameError">
+            @ViewBag.msg
+        </div>
+
+    }
+    <div class="row">
+        <div class="col-md-10">
+            <form asp-controller="Home" asp-action="AddSale">
+                @{
+                    if (Model != null)
+                    {
+                        foreach (var cartdata in Model)
+                        {
+
+                            <p>Item Lists</p>
+                            
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <table class="table table-bordered table-sm">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Book</th>
+                                            <th>Unit</th>
+                                            <th>Unit Price</th>
+                                            <th>Total</th>
+                                            <th></th>
+                                        </tr>
+
+                                        @{
+                                            int i = 0;
+                                            int total = 0;
+                                            foreach (var items in @cartdata.SalesItems)
+                                            {
+                                                i = (int)i + 1;
+                                                total = (int)total + Convert.ToInt32(items.TotalPrice);
+
+                                                <tr>
+                                                    <td>@i</td>
+                                                    <td>@items.BookTitle</td>
+                                                    <td>@items.Units</td>
+                                                    <td class="text-end">@items.UnitPrice .00</td>
+                                                    <td class="text-end">@items.TotalPrice .00</td>
+
+                                                    <td>
+                                                        <a asp-controller="Home" asp-action="ItemDelete" asp-route-id="@items.SalesItemId"><i class="fa fa-trash" aria-hidden="true"></i></a>
+
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                        <tr>
+                                            <td>Total</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="text-end"></td>
+                                            <td class="text-end">@total .00</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+
+
+                            </div>
+                                <input id="salesid" name="salesid" value="@cartdata.SalesId" type="hidden" class="form-control" />
+                                <div class="form-group row">
+                                    <div class="col-md-2">
+                                        <label for="Date" class="control-label">Date</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" name="Date" id="Date" class="form-control" value="@cartdata.SalesDate" readonly />
+                                        <span for="Date" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-2">
+                                        <label for="paym" class="control-label">Paymet Method</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" name="paym" id="paym" class="form-control" value="@cartdata.PaymentMethod" />
+
+                                        <span for="paym" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            <div class="form-group row">
+                                <div class="col-md-2">
+                                    <label for="paytot" class="control-label">Total Payment</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="paytot" id="paytot" class="form-control" value="@total" />
+
+                                    <span for="paytot" class="text-danger"></span>
+
+                                </div>
+                            </div>
+
+
+                        }
+                    }
+                }
+                <div class="form-group row">
+                    <div class="col-md-8">
+                    </div>
+                    <div class="col-md-2 float-end">
+                            <input type="submit" value="Make Payment" class="btn btn-sm book-btn" />
+                    </div></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

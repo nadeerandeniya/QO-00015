@@ -1,0 +1,113 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+    ViewData["Cart"] = HttpContextAccessor.HttpContext.Session.GetString("_Cart");
+}
+<img src="~/images/bg.png" width="100%" ></img>
+<div class="text-center">
+    <div class="row pt-4 pb-4">
+        <div class="text-center" id="new">
+            <h5 class="div-title">Novels</h5>
+
+        </div>
+        @foreach(var item in ViewBag.novel)
+        {
+            <div class="col-md-2 pb-2">
+                <img src="~/images/@item.CoverImage" width="100%" class="book-img"></img>
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@item.BookId">
+                    <button class="btn book-btn">View</button>
+                </a>
+            </div>
+        }
+
+
+    </div>
+    
+</div>
+
+<div class="text-center">
+    <div class="row pt-4 pb-4">
+        <div class="text-center" id="new">
+            <h5 class="div-title">Kids Collections</h5>
+
+        </div>
+        @foreach (var item in ViewBag.kids)
+        {
+            <div class="col-md-2 pb-2">
+                <img src="~/images/@item.CoverImage" width="100%" class="book-img"></img>
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@item.BookId">
+                    <button class="btn book-btn">View</button>
+                </a>
+            </div>
+        }
+
+
+    </div>
+    <div class="btn-div mb-4">
+        <a asp-controller="Home" asp-action="AllBooks">
+            <button class="btn btn-4793AF">View All</button>
+        </a>
+    </div>
+</div>
+
+
+<div class="mt-4 bgwhitesmoke p-3">
+    <div class="text-center" id="about">
+        <h1 class="div-title">Who we are</h1>
+
+    </div>
+    <div class="row pt-3">
+        <div class="col-md-8">
+            <h4>"Empowering Minds, Enriching Lives"</h4>
+            <br>
+            <p>
+                E-Book Pvt. Ltd is a leading company in the realm of used book sales in Sri Lanka, distinguished by its rapid growth and esteemed reputation over the past three years. As the foremost network of bookshops in the country, E-Book Pvt. Ltd has expanded its business both in quality and quantity, establishing itself as a prestigious and trusted name in the book-selling industry.
+            </p>
+            <br>
+            <p>The company boasts an extensive collection of used books, catering to a diverse readership that spans from young children to advanced academics. This impressive range includes both Sri Lankan and international titles across multiple disciplines, ensuring that E-Book Pvt. Ltd meets the varied needs and interests of its customers. Whether one is seeking literature, academic texts, or children's books, E-Book Pvt. Ltd provides a comprehensive selection that appeals to all ages and preferences.</p>
+            <p> With a commitment to fostering a love for reading and making literature accessible, E-Book Pvt. Ltd has developed a robust network of bookshops throughout Sri Lanka. Each outlet is dedicated to offering high-quality used books at affordable prices, thereby promoting literacy and lifelong learning among the Sri Lankan population. The company’s dedication to excellence and customer satisfaction has solidified its status as a premier destination for book enthusiasts across the nation.</p>
+        </div>
+        <div class="col-md-4 p-2">
+            <img src="~/images/aboutus.png"  width="100%" height="auto"></img>
+        </div>
+    </div>
+
+</div>
+<img src="~/images/bg2.png" width="100%"></img>
+<div class="mt-4">
+    <div class="text-center" id="contact">
+        <h1 class="div-title">Contact Us</h1>
+
+    </div>
+    <div class="row pt-3">
+        <div class="text-center col-md-2 p-2">
+            <h1 class="div-title">Need assistance? We're just a call or click away, 24/7</h1>
+         </div>
+        <div class="text-left col-md-5 p-2">
+            <h4 class="pb-3">Contact info</h4>
+            <p>
+                <i class="fa fa-phone green-text fa-lg pe-3" aria-hidden="true"></i>
+                +94 123 456 789
+            </p>
+            <p>
+                <i class="fa fa-envelope green-text fa-lg pe-3" aria-hidden="true"></i>
+                ebook.com@gmail.com
+            </p>
+            <p>
+                <i class="fa fa-map-marker green-text fa-lg pe-3" aria-hidden="true"></i>
+                Yatiyana Road , 
+                Matara,
+                Sri Lanka
+                40500
+            </p>
+            
+        </div>
+        <div class="text-left col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="80%" height="200" frameborder="0" style="border:0"></iframe>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,45 @@
+﻿@model ebooks.Models.Feedback
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Index";
+    ViewData["UserRole"] = "Admin";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+}
+<div class="main-div">
+<h1>Details</h1>
+
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    @if (ViewBag.Feedbacks != null)
+        {
+            <div class="row">
+                @if (ViewBag.Bookcover!= null)
+                {
+                    <div class="col-md-3"> <img src="~/images/@ViewBag.Bookcover" width="100px" height="auto"></div>
+                <div class="col-md-7"><h6>@ViewBag.booktitle</h6></div>
+                }
+                
+            </div>
+            <table class="table table-borderless table-sm">
+
+                @foreach (var i in ViewBag.Feedbacks)
+            {
+                <tr>
+                        <td width="20%">
+                            <i class="fa fa-comments pe-3 div-title" aria-hidden="true"></i>
+                            <small class="small font-italic"> @i.Fullname</small>
+                        </td>
+                        <td><small class="small font-italic"> @i.Feedbacks </small></td>
+                        <td><a asp-controller="Feedbacks" asp-action="Delete" asp-route-id="@i.FeedbackId" asp-route-bookid="@i.BookId">Delete</a></td>
+
+
+                </tr>
+            }
+       
+    </table>
+        }else{
+            <div class="col-md-7"><h6>Still No any comments for this book.</h6></div>
+        }
+</div>

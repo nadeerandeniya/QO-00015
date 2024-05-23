@@ -1,0 +1,74 @@
+﻿@model IEnumerable<ebooks.Models.Books>
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Index";
+    ViewData["UserRole"] = "Admin";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+}
+<div class="main-div">
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CoverImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookType)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Availability)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    <img src="~/images/@Html.DisplayFor(modelItem => item.CoverImage)" width="100px" height="auto">
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookType)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Availability)
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+                        <a asp-controller="Feedbacks" asp-action="feedbackview" asp-route-id="@item.BookId">Feedback</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

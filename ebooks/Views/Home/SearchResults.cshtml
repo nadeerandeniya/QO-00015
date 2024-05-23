@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ebooks.Models.Books>
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+    ViewData["Cart"] = HttpContextAccessor.HttpContext.Session.GetString("_Cart");
+}
+<div class="main-div">
+    <div class="row mt-4 id="new">
+        <div class="text-center" id="about">
+            <h1 class="green-title">Search Result</h1>
+
+        </div>
+        <div class="row pt-4 pb-4">
+            <div class="text-center" id="new">
+
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="col-md-2 pb-2">
+                    <img src="~/images/@item.CoverImage" width="100%" class="book-img"></img>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.BookId">
+                        <button class="btn book-btn">View</button>
+                    </a>
+                </div>
+            }
+
+
+        </div>
+       
+
+    </div>
+</div>

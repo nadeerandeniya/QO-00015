@@ -1,0 +1,140 @@
+/* color them #4793AF
+#FFC470
+#DD5746
+#8B322C blue orange red maroon
+
+    #0097b2 mermaid blue
+    #3cde0b sky blue
+*/
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+main {
+    background-color: azure;
+    min-height:500px;
+}
+.navbar-expand-sm {
+    padding: 0;
+}
+
+.navbar-expand-lg {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.nav-link.text-dark {
+    font-size: 1.2rem;
+}
+
+.bg-FFC470 {
+    background-color: #FFC470 !important;
+}
+
+.navbar-0097b2 {
+    color: #0097b2 !important;
+    font-size: 1.1rem;
+    background-color: azure;
+}
+
+.btn-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.btn-4793AF {
+    background-color: #4793AF;
+    border: 0.1rem solid #0097B2;
+    border-radius: 15px;
+    width:20%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #4793AF, #B4EBF5,#0097b2);
+}
+
+.btn-search {
+    background-image: linear-gradient(to right, #4793AF, #B4EBF5,#0097b2);
+    border: 0.1rem solid #0097b2;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.book-btn {
+    background-image: linear-gradient(to right, #4793AF, #B4EBF5,#0097b2);
+    border: 0.1rem solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.book-img {
+    box-shadow: 0 4px 8px 0 rgb(0, 151, 178), 0 6px 20px 0 rgb(60, 208, 235);
+    border: 0.1rem #0097B2;
+}
+
+.div-title {
+    color: #8B322C;
+    font-size: 1.6rem;
+}
+
+.s-text {
+    font-size: 1.4rem;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.img-pa {
+    border: 40px solid #ffc470;
+}
+
+.bgwhitesmoke {
+    background-color: whitesmoke;
+}
+
+.input-b {
+    border: 0.1rem solid #0097b2;
+}
+
+.search {
+    border-radius: 15px 0 0px 15px;
+    border: 0.1rem solid #0097b2 !important;
+}
+
+.card-admin {
+    margin: 10px;
+    border: 1px solid #8B322C;
+    border-radius: 0.25rem;
+}
+.main-div {
+    background-color: #f3f9fa;
+    border: 0.03rem solid #0097b2;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.p-0097b2 {
+    color: #0097b2;
+}
+.icon{
+    font-size:2rem;
+}

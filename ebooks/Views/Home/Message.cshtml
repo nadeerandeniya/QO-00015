@@ -1,0 +1,21 @@
+﻿@model ebooks.Models.Books
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+    ViewData["Cart"] = HttpContextAccessor.HttpContext.Session.GetString("_Cart");
+}
+<div class="main-div">
+<h1>Confirmation</h1>
+
+
+    @if (ViewBag.msg != null)
+    {
+        <div class="alert alert-block alert-success" style=" color: darkred;" id="nameError">
+            @ViewBag.msg
+        </div>
+
+    }
+   </div>
+   

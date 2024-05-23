@@ -1,0 +1,133 @@
+﻿
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Index";
+    ViewData["UserRole"] = "Admin";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+}
+<div class="main-div">
+<h1>Report View</h1>
+    <script>
+        function printfunction() {
+            window.print();
+
+            setTimeout(function () {
+                window.close();
+            }, 500);
+        }
+
+    </script>
+    <div onload="printfunction()">
+        @{
+            <h3 class="display-6">@ViewBag.report From @ViewBag.fromdate To @ViewBag.todate</h3>
+
+            if (ViewBag.report == "Customer List")
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Customer Name</th>
+                            <th>Customer Phone</th>
+                            <th>Customer Address</th>
+                            <th>Customer Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @if (ViewBag.cus != null)
+                        {
+                            var i = 0;
+                            foreach (var c in ViewBag.cus)
+                            {
+                                i = i + 1;
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@c.FullName</td>
+                                    <td>@c.Phone</td>
+                                    <td>@c.Email</td>
+                                    <td>@c.Address</td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            }
+            else if (ViewBag.report == "Book List")
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Book Name</th>
+                            <th>Book Author</th>
+                            <th>Book Publisher</th>
+                            <th>Book Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @if (ViewBag.book != null)
+                        {
+                            var i = 0;
+                            foreach (var c in ViewBag.book)
+                            {
+                                i = i + 1;
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@c.BookTitle</td>
+                                    <td>@c.Author</td>
+                                    <td>@c.Publisher</td>
+                                    <td>@c.BookPrice</td>
+                                    <td>@c.Availability</td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            }
+            else if (ViewBag.report == "Sales List")
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Receipt No</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Total Amount</th>
+                            <th>Payment Method</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @if (ViewBag.sales != null)
+                        {
+                            var i = 0;
+                            foreach (var c in ViewBag.sales)
+                            {
+                                i = i + 1;
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@c.SalesId</td>
+                                    <td>@c.SalesDate</td>
+                                    <td>@c.Fullname</td>
+                                    <td class="float-end">@c.TotalPrice .00</td>
+                                    <td>@c.PaymentMethod</td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            }
+        }
+
+        <a href="javascript:window.print()" class="float-end"><button class="btn btn-primary">Print Report</button></a>
+        <a href="javascript:window.print()" class="float-end"><button class="btn btn-info">Download Report</button></a>
+
+    </div>

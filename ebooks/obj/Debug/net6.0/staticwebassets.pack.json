@@ -1,0 +1,341 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ebooks.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ebooks.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\0bda1038-7f27-4ee6-bd03-cfffcf680d76.png",
+      "PackagePath": "staticwebassets\\images\\0bda1038-7f27-4ee6-bd03-cfffcf680d76.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\1a68e2b6-9617-43af-a1de-03e81b71cd2f.png",
+      "PackagePath": "staticwebassets\\images\\1a68e2b6-9617-43af-a1de-03e81b71cd2f.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\20798fa2-c783-4cea-b040-6c76115ae81f.png",
+      "PackagePath": "staticwebassets\\images\\20798fa2-c783-4cea-b040-6c76115ae81f.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\49181f34-8601-484f-99d6-f363ff462f9e.png",
+      "PackagePath": "staticwebassets\\images\\49181f34-8601-484f-99d6-f363ff462f9e.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\6dd0b1d2-1a94-4ca2-8fa0-d3df161bbc3b.png",
+      "PackagePath": "staticwebassets\\images\\6dd0b1d2-1a94-4ca2-8fa0-d3df161bbc3b.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\8be84026-ad9d-497a-bc47-51ad91cc5d61.png",
+      "PackagePath": "staticwebassets\\images\\8be84026-ad9d-497a-bc47-51ad91cc5d61.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\920a5dc1-1590-4e24-8ffd-3d2a34d9d688.png",
+      "PackagePath": "staticwebassets\\images\\920a5dc1-1590-4e24-8ffd-3d2a34d9d688.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\9b0f5bf9-92e4-4627-85d3-9f6303917def.png",
+      "PackagePath": "staticwebassets\\images\\9b0f5bf9-92e4-4627-85d3-9f6303917def.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\a.png",
+      "PackagePath": "staticwebassets\\images\\a.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\a20adda8-0ac0-4df7-a628-28eea3db4b0b.png",
+      "PackagePath": "staticwebassets\\images\\a20adda8-0ac0-4df7-a628-28eea3db4b0b.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\aboutus.png",
+      "PackagePath": "staticwebassets\\images\\aboutus.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\ae1c5b32-854c-447b-9218-305b7d43e4f1.png",
+      "PackagePath": "staticwebassets\\images\\ae1c5b32-854c-447b-9218-305b7d43e4f1.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\b0ea9779-9d26-4608-8c20-5c0550468b81.png",
+      "PackagePath": "staticwebassets\\images\\b0ea9779-9d26-4608-8c20-5c0550468b81.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\bf647d2f-644b-49b1-9d44-d3fb35de87b3.png",
+      "PackagePath": "staticwebassets\\images\\bf647d2f-644b-49b1-9d44-d3fb35de87b3.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\bg.png",
+      "PackagePath": "staticwebassets\\images\\bg.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\bg2.png",
+      "PackagePath": "staticwebassets\\images\\bg2.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\eb19a486-5130-4a3d-94bd-63befd504157.png",
+      "PackagePath": "staticwebassets\\images\\eb19a486-5130-4a3d-94bd-63befd504157.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\images\\fad3b781-a973-44ca-bda2-5f3393d9fb8c.png",
+      "PackagePath": "staticwebassets\\images\\fad3b781-a973-44ca-bda2-5f3393d9fb8c.png"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\softwares\\Assignments\\ebooks\\ebooks\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ebooks.props",
+      "PackagePath": "build\\ebooks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ebooks.props",
+      "PackagePath": "buildMultiTargeting\\ebooks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ebooks.props",
+      "PackagePath": "buildTransitive\\ebooks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ebooks.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

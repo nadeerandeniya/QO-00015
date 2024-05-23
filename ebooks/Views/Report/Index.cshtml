@@ -1,0 +1,38 @@
+﻿
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Index";
+    ViewData["UserRole"] = "Admin";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+}
+<div class="main-div">
+<h1>Report</h1>
+    <div class="row col-md-6">
+        <form asp-controller="Report" asp-action="ViewReport">
+            <div class="form-group">
+                <label for="sdate" class="control-label">From Date</label>
+                <input name="sdate" id="sdate" type="date" class="form-control" required />
+                <span for="sdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="edate" class="control-label">To Date Date</label>
+                <input name="edate" id="edate" type="date" class="form-control" required />
+                <span for="edate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="report" class="control-label">Report</label>
+                <select name="report" id="report" class="form-control" required />
+                <option value="Customer List">Customer List</option>
+                <option value="Book List">Book List</option>
+                <option value="Sales List">Sales List</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="View" class="btn btn-primary" />
+            </div>
+
+        </form>
+
+    </div>
+</div>

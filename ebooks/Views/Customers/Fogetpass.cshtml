@@ -1,0 +1,41 @@
+﻿@model ebooks.Models.Customers
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="main-div">
+<h1>Foget Password</h1>
+
+<h4>Customers</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        @if (ViewBag.Result != null)
+        {
+            <div class="alert alert-block alert-success" style=" color: darkred;" id="nameError">
+                @ViewBag.Result
+            </div>
+
+        }
+     <form asp-action="PasswordReset">
+            
+            <div class="form-group">
+                    <label asp-for="Email" class="control-label">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-sm book-btn" />
+            </div>
+        </form>
+            <a asp-action="Fogetpass">Forgot Password?</a><br />
+            <a asp-controller="Customers" asp-action="CreateCustomer">Create New Account</a>
+    </div>
+   
+
+</div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

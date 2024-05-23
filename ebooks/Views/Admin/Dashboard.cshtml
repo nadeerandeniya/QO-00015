@@ -1,0 +1,103 @@
+﻿@model ebooks.Models.Users
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Create";
+    ViewData["UserRole"] = "Admin";
+    ViewData["Username"] = HttpContextAccessor.HttpContext.Session.GetString("_Name");
+}
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<div class="main-div">
+<h1>Admin</h1>
+
+<h4>Dashboard</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <h6>Book Series</h6>
+   <div id="chart">
+       </div>
+       </div>
+            <div class="col-md-4">
+            <h6>Day sales</h6>
+                <div id="chart2">
+
+                </div>
+                </div>
+</div>
+</div>
+<script type="text/javascript">
+    var options = {
+        series: [25, 33,12, 6, 28,34],
+        chart: {
+            type: 'donut',
+        },
+        labels: ['Novels', 'Kids', 'short', 'Educational', 'Other', 'Translations'],
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+    var yesterday =new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    var dd = String(yesterday.getDate()).padStart(2, '0');
+    var mm = String(yesterday.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = yesterday.getFullYear();
+
+    yesterday = mm + '/' + dd + '/' + yyyy;
+
+    var yesterday1 = new Date();
+    yesterday1.setDate(yesterday1.getDate() - 2);
+    var dd = String(yesterday1.getDate()).padStart(2, '0');
+    var mm = String(yesterday1.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = yesterday1.getFullYear();
+
+    yesterday1 = mm + '/' + dd + '/' + yyyy;
+
+    var yesterday2 = new Date();
+    yesterday2.setDate(yesterday2.getDate() - 3);
+    var dd = String(yesterday2.getDate()).padStart(2, '0');
+    var mm = String(yesterday2.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = yesterday2.getFullYear();
+
+    yesterday2 = mm + '/' + dd + '/' + yyyy;
+
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+        var options2 = {
+            chart: {
+                type: 'bar'
+            },
+            series: [{
+                name: 'sales',
+            data: [@ViewBag.todaysale4, @ViewBag.todaysale3, @ViewBag.todaysale2, @ViewBag.todaysale1]
+            }],
+            xaxis: {
+            categories: [yesterday2, yesterday1, yesterday, today]
+            }
+        }
+
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+
+        chart2.render();
+ 
+</script>
+     
